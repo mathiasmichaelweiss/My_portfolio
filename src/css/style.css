@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* ___________________ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #070707;
+    width: 100%;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #000;
+    color: #F6F6F6;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.container {
+    width: 944px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.header__inner {}
+
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    color: #828282;
+    margin-left: 155px;
+
+}
+
+.nav__link:first-child {
+    color: #828282;
+    margin-left: 0;
+    padding-left: ;
+}
+
+.line {
+    margin-top: 30px;
+    width: 940.6px;
+    height: 0px;
+    border: 1px solid #828282;
+}
+
+/* Intro */
+
+.intro {
+    margin-bottom: 105px;
+}
+
+.name {
+    width: 180px;
+    height: 120px;
+    font-weight: bold;
+    font-size: 47px;
+    padding-top: 20px;
+    line-height: 55px;
+}
+
+.profession__city {
+    position: absolute;
+    left: 650px;
+    top: 175px;
+    width: 155px;
+    height: 60px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.lang {
+    position: absolute;
+    top: 175px;
+    left: 1135px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #828282;
+    width: 102px;
+    height: 20px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+
+}
+
+.languages {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.person__photo {
+    background-image: url('/src/img/person_photo.jpg');
+    width: 944px;
+    height: 450px;
+    margin-top: 30px;
+}
+
+
+/* About me */
+
+.about__me-bg {
+    background: #F6F6F6;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.about__me__contaiter {}
+
+.about__me {
+    padding: 120px 0;
+}
+
+.about__me-inner {}
+
+.about__title {
+    margin-bottom: 20px;
+}
+
+
+.about__text {
+    width: 480px;
+    height: 206px;
+    margin: 0 auto;
+}
+
+.about__text-inner {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/* Skills */
+
+.skills__title {
+    margin-bottom: 30px;
+}
+
+.skills-subtitle {
+    width: 230px;
+    height: 24px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.skills__subtitle-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 110px;
+}
+
+.skills__item {
+    margin-left: 84px;
+    margin-top: 20px;
+    width: 170px;
+    height: 206px;
+}
+
+.skills__item:first-child {
+    margin-left: 0;
+}
+
+.skill__img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.skill__icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.skill__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.skill__level {
+    width: 166px;
+    height: 26px;
+    background: url(/src/img/icons/html__skill.png)0 0/100% auto;
+    margin-top: 40px;
+}
+
+/* Portfolio */
+
+.portfolio-bg {
+    background: #F6F6F6;
+    width: 100%;
+}
+
+.portfolio__inner {
+    padding: 120px 0;
+}
+
+.portfolio__title {
+    margin-bottom: 0px;
+}
+
+.portfolio__item {
+    margin-top: 100px;
+}
+
+.portfolio__item:first-child {
+    margin-top: 47px;
+}
+
+.work {
+    padding-bottom: 45px;
+}
+
+.work__link-container {
+    margin: 0 auto;
+    width: 29%;
+}
+
+.work__link {
+    color: #070707;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* Footer/Social */
+
+.contacts__inner {}
+
+.contacts__title {
+    margin: 115px 0 20px 0;
+}
+
+.title__text {}
+
+.contacts__subtitle {
+    margin: 0 auto;
+    width: 28%;
+}
+
+.subtitle__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.send__message {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.social__footer {
+    margin-bottom: 135px;
+}
+
+.social {
+    display: flex;
+    width: 36%;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.social__item {
+    margin-left: 60px;
+}
+
+.social__item:first-child {
+    margin-left: 0;
+}
+
+.social__icon {
+    cursor: pointer;
+}
+
+.social__text {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.footer__social__text {
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+
+/* Modal */
+.modal {
+    position: relative;
+    background-color: #fff;
+    padding: 25px 30px;
+    margin: 0 auto;
+    width: 730px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -75%;
+}
+
+.invisible {
+    display: none;
+}
+
+.btn__shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.modal__close__item {
+    position: absolute;
+    top: -5%;
+    left: 96%;
+    cursor: pointer;
+}
+
+.modal__close {}
+
+.first__form {
+    display: flex;
+    width: 730px;
+    margin-bottom: 30px;
+}
+
+.modal__title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.email__title {
+    width: 100px;
+    margin-top: 7px;
+}
+
+input.put__email {
+    padding-left: 10px;
+    width: 630px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form__text__title {
+    margin-bottom: 5px;
+}
+
+textarea.put__text {
+    padding: 10px;
+    width: 730px;
+    height: 200px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
