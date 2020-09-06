@@ -6,15 +6,23 @@ const menuItem = document.querySelectorAll('.nav__link'),
     skillImage = document.querySelectorAll('.skill__img'),
     sendMessageBtn = document.querySelectorAll('.send__message'),
     modal = document.querySelector('.modal'),
-    closeModal = document.querySelectorAll('.modal__close__item');
+    closeModal = document.querySelectorAll('.modal__close__item'),
+    btn = document.querySelectorAll('#btn');
 
+btn.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.cssText = `
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        `;
+    });
+    item.addEventListener('mouseout', () => {
+        item.style.cssText = ``;
+    });
+});
 
 sendMessageBtn.forEach(item => {
     item.addEventListener('click', () => {
         modal.classList.remove('invisible');
-    });
-    item.addEventListener('mousover', () => {
-        item.classList.add('btn__shadow');
     });
 });
 
