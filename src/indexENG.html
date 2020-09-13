@@ -11,7 +11,9 @@
 
 <body>
     <!-- Header -->
-
+    <div class="container">
+        <div class="burger__item"></div>
+    </div>
     <div class="container" id="home">
         <header id="header" class="header">
             <div class="header__inner">
@@ -29,12 +31,14 @@
     <!-- Intro -->
     <div class="container">
         <div class="intro" id="intro">
-            <div class="name">Mathias Weiß</div>
-            <div class="profession__city">Junior Front end  Developer, Gelsenkirchen</div>
-            <div class="lang">
-                <p id="ru" class="languages">RU </p>
-                <p id="eng" class="languages">| ENG |</p>
-                <p id="de" class="languages">DE</p>
+            <div class="name__prof__lang">
+                <div class="name">Mathias Michael Weiß</div>
+                <div class="profession__city">Junior Front end  Developer, Gelsenkirchen</div>
+                <div class="lang">
+                    <p id="ru" class="languages  rus">RU </p>
+                    <p id="eng" class="languages  engl">| ENG |</p>
+                    <p id="de" class="languages  deu">DE</p>
+                </div>
             </div>
             <div class="person__photo" id="about"></div>
         </div>
@@ -64,36 +68,7 @@
         <div class="skills-subtitle">
             <p class="skills__subtitle-text">I work with</p>
         </div>
-        <div class="skills">
-            <div class="skills__item">
-                <div class="skill__icon">
-                    <img src="/src/img/icons/first__icon.png" alt="" class="skill__img">
-                </div>
-                <h4 class="skill__title">HTML5</h4>
-                <div class="skill__level"></div>
-            </div>
-            <div class="skills__item">
-                <div class="skill__icon">
-                    <img src="/src/img/icons/second__icon.png" alt="" class="skill__img">
-                </div>
-                <h4 class="skill__title">CSS3</h4>
-                <div class="skill__level"></div>
-            </div>
-            <div class="skills__item">
-                <div class="skill__icon">
-                    <img src="/src/img/icons/third__icon.png" alt="" class="skill__img">
-                </div>
-                <h4 class="skill__title">JavaScript</h4>
-                <div class="skill__level"></div>
-            </div>
-            <div class="skills__item">
-                <div class="skill__icon">
-                    <img src="/src/img/icons/fourth__icon.png" alt="" class="skill__img">
-                </div>
-                <h4 class="skill__title">React</h4>
-                <div class="skill__level"></div>
-            </div>
-        </div>
+        <div class="skills"></div>
     </div>
     <!-- Portfolio -->
     <div class="portfolio-bg">
@@ -125,6 +100,7 @@
                     </div>
                 </div>
             </div>
+            <div class="open__more-portfolio"></div>
         </div>
     </div>
     <!-- Contacts -->

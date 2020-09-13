@@ -1,0 +1,144 @@
+/* More skills */
+
+.accordion {
+    margin-bottom: 60px;
+}
+
+.accordion__item {
+    padding-bottom: 90px;
+}
+
+.more__skills {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.more {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-bottom: 3px;
+
+}
+
+.open__more__skills {
+    display: inline-block;
+    margin: 0 auto;
+    width: 5%;
+    height: 10px;
+    background: url('/src/img/icons/open_next.svg') 0 0/ 100% auto;
+    background-repeat: no-repeat;
+}
+
+.container__soft__skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.soft__skills:first-child {
+    margin-left: 5px;
+}
+
+.soft__skills {
+    margin-left: 54px;
+}
+
+.name__soft {
+    margin-bottom: 21px;
+}
+
+.first__skill__soft {
+    display: flex;
+    padding-top: 10px;
+}
+
+.first__soft {
+    padding-right: 10px;
+}
+
+.first__lvl {
+    padding-top: 4.5px;
+    padding-right: 10px;
+}
+
+.first__lvl_writing {}
+
+.second__skill__soft {
+    display: flex;
+    padding-top: 10px;
+}
+
+.second__soft {
+    padding-right: 10px;
+}
+
+.second__lvl {
+    padding-top: 4.5px;
+    padding-right: 10px;
+}
+
+.second__lvl_writing {}
+
+.third__skill__soft {
+    display: flex;
+    padding-top: 10px;
+}
+
+.third__soft {
+    padding-right: 15px;
+}
+
+.third__lvl {
+    padding-top: 4.5px;
+    padding-right: 10px;
+}
+
+.third__lvl_writing {}
+
+.hidden__name__soft {
+    color: white;
+}
+
+/* Edit soft skills level */
+
+.edit__fl {
+    margin-left: 10px;
+}
+
+.edit__sl {
+    margin-left: 2px;
+}
+
+.edit__tl {
+    margin-left: 48px;
+}
+
+.edit__flpos {
+    margin-left: 27px;
+}
+
+.edit__slmot {
+    margin-left: 15px;
+}
+
+
+.edit__tlAdap {}
+
+/* ______________________ */
+
+.skip__more__skills {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.skip {
+    display: inline-block;
+    margin: 0 auto;
+    width: 5%;
+    height: 27px;
+    background: url('/src/img/icons/skip.svg') 0 0/ 100% auto;
+    background-repeat: no-repeat;
+}
