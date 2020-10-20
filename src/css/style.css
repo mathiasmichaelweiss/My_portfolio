@@ -101,6 +101,7 @@ h2 {
 
 a {
     text-decoration: none;
+    color: #828282;
 }
 
 button {
@@ -115,6 +116,68 @@ button {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
+/* Burger */
+
+.Burger__close__item {
+    position: absolute;
+    top: -2.5%;
+    left: -6%;
+
+    cursor: pointer;
+}
+
+.burger__close {}
+
+.burger__item {}
+
+.menu__burger {
+    position: absolute;
+    width: 51%;
+    height: 812px;
+    margin-left: 49.2%;
+    font-size: 34px;
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, .1));
+}
+
+.nav__burger__inner {
+    width: 100%;
+    height: 100%;
+}
+
+.burger__link {
+    display: inline-block;
+    margin-right: 50%;
+    margin-bottom: 68px;
+    margin-left: 40px;
+}
+
+
+.burger__link:first-child {
+    margin-top: 60px;
+}
+
+
+.burger__lang {
+    color: #828282;
+}
+
+.bl__ru {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.bl__eng {
+    display: inline-block;
+}
+
+.bl__de {
+    display: inline-block;
+}
 
 /* Header */
 
@@ -129,13 +192,11 @@ button {
 }
 
 .nav__link {
-    color: #828282;
     margin-left: 155px;
 
 }
 
 .nav__link:first-child {
-    color: #828282;
     margin-left: 0;
 }
 
@@ -171,7 +232,7 @@ button {
 
 .profession__city {
     width: 16.5%;
-    height: 77px;
+    height: 58px;
     font-weight: 500;
     line-height: 21px;
     margin-left: 240px;
@@ -188,6 +249,10 @@ button {
 
 .name__prof__lang .lang {
     align-self: center;
+}
+
+.on {
+    color: #070707;
 }
 
 .lang {
@@ -348,7 +413,9 @@ button {
 
 .work__link-container {
     margin: 0 auto;
-    width: 29%;
+    width: 100%;
+    text-align: center;
+
 }
 
 .work__link {
@@ -358,14 +425,32 @@ button {
     line-height: 21px;
 }
 
-.open__more-portfolio {
+.open {
     width: 6%;
     height: 10px;
-    background-image: url(/src/img/icons/open_next.svg);
-    background-repeat: no-repeat;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 50px 0px;
     margin: 0 auto;
 }
+
+.close {
+    width: 6%;
+    height: 10px;
+    padding: 0px 0px 50px 0px;
+    margin: 0 auto;
+}
+
+.open__close:hover,
+.open__close:focus {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .7));
+}
+
+/* Accordion */
+
+.accordion__inner {
+    margin-top: 100px;
+}
+
+.accordion__inner .portfolio__item {}
 
 /* Footer/Social */
 
@@ -408,6 +493,11 @@ button {
 
 .social__item {
     margin-left: 60px;
+}
+
+.social__icon:hover,
+.social__icon:focus {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .1));
 }
 
 .social__item:first-child {
@@ -497,9 +587,9 @@ textarea.put__text {
 }
 
 /* Media 1000px*/
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .container {
@@ -533,7 +623,8 @@ textarea.put__text {
         font-weight: 500;
         line-height: 21px;
         margin-left: 200px;
-        margin-right: 180px;
+        margin-right: 26%;
+        margin-bottom: 20px;
     }
 
     .lang {
@@ -569,7 +660,7 @@ textarea.put__text {
         text-align: center;
     }
 
-    .open__more-portfolio {
+    .open {
         width: 7.5%;
         height: 10px;
         background-image: url(/src/img/icons/open_next.svg);
@@ -589,7 +680,7 @@ textarea.put__text {
 
 /* media 768 */
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .nav {
         display: none;
     }
@@ -602,18 +693,53 @@ textarea.put__text {
         display: none;
     }
 
-    .burger {
+    .burger__item {
         position: absolute;
-        margin: 93%;
-        margin-top: 60px;
+        background-image: url(/src/img/icons/burger.svg);
+        margin: 50px 0 0 95.5%;
+        margin-top: 0px;
         width: 33px;
         height: 20px;
+    }
+
+
+    .name__prof__lang {
+        display: block;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        height: 150px;
+        margin-top: 60px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        width: 40%;
+        height: 100px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        margin-left: 0;
+    }
+
+    .profession__city {
+        width: 30%;
+        height: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 20px;
+    }
+
+    .person__photo {
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
 /* Media 415px */
 
-@media (max-width: 415px) {
+@media (max-width: 416px) {
     body {
         width: 100%;
         font-size: 18px;
@@ -635,6 +761,16 @@ textarea.put__text {
         margin-top: 0px;
         width: 33px;
         height: 20px;
+    }
+
+    .menu__burger {
+        position: absolute;
+        width: 51%;
+        height: 650px;
+        margin-left: 45.8%;
+        font-size: 24px;
+        background-color: #fff;
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, .1));
     }
 
     .nav__link {
@@ -722,7 +858,7 @@ textarea.put__text {
         text-align: center;
     }
 
-    .open__more-portfolio {
+    .open {
         width: 15%;
         height: 10px;
         background-image: url(/src/img/icons/open_next.svg);
@@ -737,7 +873,5 @@ textarea.put__text {
     }
 
     .footer__social__text {}
-
-
 
 }
